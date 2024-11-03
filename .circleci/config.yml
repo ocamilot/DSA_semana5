@@ -35,7 +35,6 @@ jobs:
             export RAILWAY_TOKEN=8a78081d-e283-4c74-998a-0d0cea828b7f
             echo $RAILWAY_TOKEN
             railway status
-            railway link --project 63ea11a6-d935-4aeb-8dca-5e3ef99b4b6f --service 3aacb365-20d8-4dcc-8562-3c6bbc68b8ff
             railway up --detach
 
 
