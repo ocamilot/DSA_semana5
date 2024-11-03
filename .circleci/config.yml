@@ -34,8 +34,8 @@ jobs:
             echo $p
             export RAILWAY_TOKEN=8a78081d-e283-4c74-998a-0d0cea828b7f
             echo $RAILWAY_TOKEN
+            RAILWAY_TOKEN=8a78081d-e283-4c74-998a-0d0cea828b7f railway up --detach
             railway status
-            RAILWAY_TOKEN=$RAILWAY_TOKEN railway up --detach
             railway up --detach
 
 
