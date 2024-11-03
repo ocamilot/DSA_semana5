@@ -29,14 +29,9 @@ jobs:
           name: Deploy to Railway App
           command: |
             cd bankchurn-api 
-            echo Hola
-            export p=hola2
-            echo $p
             export RAILWAY_TOKEN=8a78081d-e283-4c74-998a-0d0cea828b7f
             echo $RAILWAY_TOKEN
-            RAILWAY_TOKEN=8a78081d-e283-4c74-998a-0d0cea828b7f railway up --detach
-            railway status
-            railway up --detach
+            railway up --service=overflowing-spirit -d
 
 
 tags_only: &tags_only
